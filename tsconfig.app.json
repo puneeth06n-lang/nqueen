@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "types": ["vite/client", "node"],
+    "skipLibCheck": true,
+    "strict": false,
+    "paths": {
+      "@/*": ["./src/*"],
+      "lucide-react": ["./src/lib/lucide-react.tsx"],
+      "lucide-react-upstream": ["./node_modules/lucide-react/dist/lucide-react.d.ts"],
+      "recharts": ["./src/lib/recharts.tsx"],
+      "recharts-upstream": ["./node_modules/recharts/types/index.d.ts"]
+    },
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "jsx": "react-jsx"
+  },
+  "include": ["src"]
+}
